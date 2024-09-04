@@ -1,7 +1,7 @@
 import argparse
-from training import train, save_model
-from chatbot import chat_loop
-from model import GPTLanguageModel, device, vocab_size, load_model
+from src.training import train, save_model
+from src.chatbot import chat_loop
+from src.model import GPTLanguageModel, device, vocab_size, load_model
 
 def main():
     parser = argparse.ArgumentParser(description='GPT Language Model')
