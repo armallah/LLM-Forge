@@ -7,7 +7,7 @@ import os
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Load vocabulary
-with open("openwebtext/vocab.txt", 'r', encoding='utf-8') as f:
+with open("../data/openwebtext/vocab.txt", 'r', encoding='utf-8') as f:
     text = f.read()
 chars = sorted(set(text))
 vocab_size = len(chars)

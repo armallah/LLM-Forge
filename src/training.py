@@ -8,7 +8,7 @@ import argparse
 from model import GPTLanguageModel, encode, decode, device
 
 def get_random_chunk(split, block_size, batch_size, Q=1):
-    filename = f"openwebtext/output_{split}.txt"
+    filename = f"../data/openwebtext/output_{split}.txt"
     with open(filename, "rb") as f:
         with mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as mm:
             file_size = len(mm)
@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     print(f"Using device: {device}")
 
-    with open("openwebtext/vocab.txt", 'r', encoding='utf-8') as f:
+    with open("../data/openwebtext/vocab.txt", 'r', encoding='utf-8') as f:
         text = f.read()
     chars = sorted(set(text))
     vocab_size = len(chars)
