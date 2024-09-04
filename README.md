@@ -1,4 +1,4 @@
-# GPT Language Model
+# Large Language Model
 
 This project implements a simple GPT (Generative Pre-trained Transformer) language model for text generation. It includes functionality for training the model and using it in a chatbot-like interface.
 
@@ -74,14 +74,10 @@ You can adjust various hyperparameters in the `main.py` file, such as:
 - `max_iters` (maximum training iterations)
 - `eval_iters` (evaluation frequency)
 
-## Contributing
-
-Feel free to fork this repository and submit pull requests with any improvements or bug fixes. For major changes, please open an issue first to discuss what you would like to change.
-
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
 
-## Acknowledgments
 
-This project is inspired by the GPT (Generative Pre-trained Transformer) architecture and is intended for educational purposes.
+
+
